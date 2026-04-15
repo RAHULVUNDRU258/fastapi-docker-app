@@ -2,6 +2,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+tasks = []
+
 @app.get("/")
 def home():
     return {"message": "It works!"}
